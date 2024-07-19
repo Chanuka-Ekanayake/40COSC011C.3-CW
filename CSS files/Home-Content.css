@@ -1,0 +1,98 @@
+#Home-Content * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+#Home-Content body {
+  margin: 0;
+  background-color: #0b1116;
+}
+
+#Home-Content p {
+  color: #fff;
+}
+
+#Home-Content #mainText {
+  position: absolute;
+  width: 519px;
+  height: 56px;
+  left: 458px;
+  top: 138px;
+  font-weight: 800;
+  line-height: 56px;
+  font-size: 48px;
+  text-align: center;
+}
+
+#Home-Content #subText {
+  position: absolute;
+  width: 854px;
+  height: 92px;
+  left: 290px;
+  top: 227px;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#Home-Content .contentLinks {
+  position: absolute;
+  width: 1223px;
+  height: 573px;
+  left: 78px;
+  top: 367px;
+  display: flex;
+  gap: 80px;
+}
+
+#Home-Content .Chapter1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Home-Content .ChapterText {
+  position: absolute;
+  bottom: 60px;
+  font-weight: 800;
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+}
+
+#Home-Content .Number1 {
+  position: absolute;
+  font-weight: 800;
+  font-size: 200px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+#Home-Content a {
+  /* SEE MORE */
+
+  position: absolute;
+  width: 114px;
+  height: 28px;
+  left: 632px;
+  top: 990px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #ffffff;
+}
+
+#Home-Content {
+  position: absolute;
+  left: 17px;
+  top: 1100px;
+}

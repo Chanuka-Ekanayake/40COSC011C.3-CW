@@ -1,0 +1,132 @@
+#Home-Shop * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+#Home-Shop p {
+  color: #fff;
+}
+
+#Home-Shop .bgclr {
+  position: absolute;
+  width: 1460px;
+  height: 600px;
+  left: -25px;
+  top: 200px;
+  background: linear-gradient(
+    259.69deg,
+    rgba(89, 116, 139, 0.4) -8.56%,
+    rgba(77, 99, 115, 0.1) 107.3%
+  );
+  opacity: 0.6;
+  backdrop-filter: blur(20px);
+}
+
+#Home-Shop #backdrop {
+  box-sizing: border-box;
+  position: absolute;
+  width: 836px;
+  height: 459px;
+  left: -103px;
+  top: 270px;
+  background: #202c32;
+  border: 5px solid #395f7a;
+  box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 59px;
+}
+
+#Home-Shop #text {
+  position: absolute;
+  width: 669px;
+  height: 225px;
+  left: 35px;
+  bottom: 350px;
+}
+
+#Home-Shop img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 2px;
+  top: 220px;
+}
+
+#Home-Shop .text2 {
+  position: absolute;
+  width: 548px;
+  height: 252px;
+  left: 787px;
+  top: 300px;
+}
+
+#Home-Shop a.my-fbutton {
+  background: linear-gradient(to right, #0f3b55, #297cb3);
+  background-color: #25465c;
+  color: #fff;
+  font-family: Trebuchet MS;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+  width: 200px;
+  margin-right: 100px;
+}
+
+#Home-Shop a.my-fbutton:hover {
+  background: linear-gradient(to right, #297cb3, #0f3b55);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #586877;
+}
+
+#Home-Shop a.my-fbutton:active {
+  transform: scale(0.95);
+}
+
+#Home-Shop a.my-sbutton {
+  background: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 1px solid #76c5ff;
+  border-radius: 10px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+
+#Home-Shop a.my-sbutton:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #0f3b55, #297cb3);
+}
+
+#Home-Shop a.my-sbutton:active {
+  transform: scale(0.95);
+}
+
+#Home-Shop .buttons {
+  position: absolute;
+  /* width: 1000px; */
+  height: 59.38px;
+  left: 850px;
+  top: 680px;
+}
+
+#Home-Shop {
+  /* Shop Landing */
+
+  position: absolute;
+  width: 1440px;
+  height: 1024px;
+  left: 0px;
+  top: 2246px;
+}

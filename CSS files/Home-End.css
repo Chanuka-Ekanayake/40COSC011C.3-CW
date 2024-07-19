@@ -1,0 +1,92 @@
+#Home-End * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+#Home-End body {
+  margin: 0;
+  background-color: #0b1116;
+}
+
+#Home-End #bgImg {
+  position: absolute;
+  width: 1440px;
+  height: 428px;
+  left: 0px;
+  top: 201px;
+
+  background: url(pexels-margerretta-548084.jpg);
+}
+
+#Home-End p {
+  position: absolute;
+  width: 730px;
+  height: 116px;
+  left: 355px;
+  top: 277px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 116px;
+
+  color: #ffffff;
+}
+
+#Home-End .email-custom {
+  box-sizing: border-box;
+  position: absolute;
+  width: 526px;
+  height: 73px;
+  left: 355px;
+  top: 422px;
+  background: none;
+  font-size: 30px;
+  font-weight: lighter;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  color: #ffffff;
+}
+
+#Home-End a.my-button {
+  background: linear-gradient(to right, #0f3b55, #297cb3);
+  background-color: #25465c;
+  color: #fff;
+  font-family: Trebuchet MS;
+  font-size: 30px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 18px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+#Home-End a.my-button:hover {
+  background: linear-gradient(to right, #297cb3, #0f3b55);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #586877;
+}
+
+#Home-End a.my-button:active {
+  transform: scale(0.95);
+}
+
+#Home-End a.my-button {
+  position: absolute;
+  width: 183px;
+  height: 73px;
+  left: 904px;
+  top: 422px;
+}
+
+#Home-End {
+  position: absolute;
+  width: 1440px;
+  left: 13px;
+  top: 4173px;
+}

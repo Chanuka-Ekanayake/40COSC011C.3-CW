@@ -1,0 +1,137 @@
+#Home-Landing * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+#Home-Landing #sky {
+  position: absolute;
+  width: 1440px;
+  height: 1000px;
+  left: 0px;
+  top: -48px;
+
+  background: url("/Assets/Images/2BGImg1.png");
+  opacity: 0.85;
+}
+
+#Home-Landing #leftBox {
+  position: absolute;
+  width: 844px;
+  height: 1100px;
+  left: -107px;
+  top: -125px;
+
+  background: rgba(86, 86, 86, 0.52);
+  border-radius: 17px;
+}
+
+#Home-Landing hr {
+  position: absolute;
+  border: 1px solid #fff;
+  width: 1228px;
+  height: 0px;
+  height: 2px;
+  left: 38px;
+  top: 482px;
+}
+
+#Home-Landing .bgbuilding {
+  position: absolute;
+  width: 1440px;
+  height: 1008px;
+  left: 0px;
+  top: 214px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#Home-Landing .bgShade {
+  position: absolute;
+  width: 1440px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+  background: #0b1116;
+  opacity: 0.5;
+}
+
+#Home-Landing .mainText {
+  position: absolute;
+  width: 686px;
+  height: 566px;
+  left: 38px;
+  top: 176px;
+  color: #fff;
+}
+
+#Home-Landing a .my-button {
+  background: linear-gradient(to right, #0f3b55, #297cb3);
+  background-color: #25465c;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 15px;
+  display: inline-block;
+  width: 276px;
+  height: 68px;
+  border: 1px solid #76c5ff;
+  border-radius: 10px;
+}
+
+#Home-Landing a .my-button:hover {
+  background: linear-gradient(to right, #297cb3, #0f3b55);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #586877;
+}
+
+#Home-Landing a.my-button:active {
+  transform: scale(0.95);
+}
+
+#Home-Landing .buttonPlace {
+  position: absolute;
+
+  left: 38px;
+  top: 674px;
+}
+
+#Home-Landing .stats {
+  position: absolute;
+  color: #fff;
+  width: 598px;
+  height: 99px;
+  left: 691px;
+  top: 780px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Home-Landing .stats p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 45px;
+}
+
+#Home-Landing .stats p .subtext {
+  font-weight: 100;
+  font-size: 32px;
+}
+
+#Home-Landing #bgLayer {
+  position: absolute;
+  width: 1440px;
+  height: 4130px;
+  left: 0px;
+  top: 1000px;
+  background: #0b1116;
+}
+
+#Home-Landing .mainText p {
+  font-size: 100px;
+  font-weight: lighter;
+}

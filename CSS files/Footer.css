@@ -1,0 +1,152 @@
+
+#Footer * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+#Footer p {
+  padding-top: 10px;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+#Footer h2 {
+  color: #ffffff;
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  font-size: 20px;
+}
+
+#Footer body {
+  background-color: #0b1116;
+}
+
+#Footer #colour {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    259.69deg,
+    rgba(89, 116, 139, 0.4) -8.56%,
+    rgba(77, 99, 115, 0.1) 107.3%
+  );
+  opacity: 0.6;
+  backdrop-filter: blur(20px);
+  z-index: 0;
+}
+
+#Footer #texture {
+  height: 300px;
+  width: 100%;
+  bottom: 0;
+  background: url("../Assets/Images/cardboard-texture\ 1.png");
+  mix-blend-mode: overlay;
+  opacity: 0.4;
+  position: absolute;
+  z-index: 1;
+}
+
+#Footer footer {
+  width: 100%;
+  bottom: 0;
+  padding: 100px 0 10px;
+  font-size: 12px;
+  line-height: 20px;
+  z-index: 2;
+}
+
+#Footer .row {
+  width: 85%;
+  bottom: 0;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#Footer .col {
+  flex-basis: 15%;
+  padding: 20px;
+  bottom: 0;
+}
+
+#Footer .col:nth-child(3) {
+  flex-basis: 10%;
+}
+
+#Footer .col:nth-child(4) {
+  flex-basis: 5%;
+}
+
+#Footer .col p {
+  font-size: 14px;
+}
+
+#Footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#Footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+#Footer a:hover {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#Footer .icons {
+  margin-top: 20px;
+  display: flex;
+  padding: 4px 2rem;
+  gap: 50px;
+}
+
+@media (max-width: 1000px) {
+    #Footer footer {
+    bottom: unset;
+  }
+
+  #Footer .col {
+    flex-basis: 100%;
+    padding-left: 0px;
+    margin: 0;
+  }
+
+  #Footer .col:nth-child(3) {
+    flex-basis: 100%;
+  }
+
+  #Footer .col:nth-child(4) {
+    flex-basis: 100%;
+  }
+
+  #Footer #texture {
+    height: 100%;
+  }
+
+  #Footer #colour {
+    height: 100%;
+  }
+}
+#Footer .footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+#Footer {
+  position: absolute;
+  width: 1452px;
+  left: -3px;
+  top: 4750px;
+  margin-top: 30px;
+}
