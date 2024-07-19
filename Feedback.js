@@ -154,7 +154,7 @@ document.getElementById('submitBtn').addEventListener("click", function (event) 
   validation();
   if (validName && validEmail) {
     document.feedback.submit();
-    setTimeout(function(){window.location.href = "./JS Files/Feedback-Thankyou.html";}, 2000);
+    setTimeout(function(){window.location.href = "Feedback-Thankyou.html";}, 2000);
 
   }
 });
@@ -182,7 +182,7 @@ document.getElementById('prevBtn').addEventListener("click", function (event) {
       recommend: recommend.value
     }));
 
-    window.location.href = "./JS Files/Feedback-Preview.html";
+    window.location.href = "Feedback-Preview.html";
 
   } else {
     validation();

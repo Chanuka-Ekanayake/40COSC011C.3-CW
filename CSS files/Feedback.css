@@ -1,15 +1,15 @@
-#feedbackForm * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-#feedbackForm body {
+body {
   background: #0b1116;
 }
 
-#feedbackForm img {
+#bgImg {
   position: absolute;
   width: 1440px;
   height: 625px;
@@ -17,7 +17,7 @@
   top: 0px;
 }
 
-#feedbackForm .text {
+.text {
   color: #ffffff;
   text-align: center;
   position: absolute;
@@ -27,7 +27,7 @@
   top: 141px;
 }
 
-#feedbackForm .formBackdrop {
+.formBackdrop {
   position: absolute;
   width: 1074px;
   height: 1800px;
@@ -37,7 +37,7 @@
   background: #13202c;
 }
 
-#feedbackForm form {
+form {
   margin: 40px 100px 40px 100px;
   position: absolute;
   left: 184px;
@@ -47,35 +47,35 @@
   font-weight: 300;
 }
 
-#feedbackForm form input:focus {
+form input:focus {
   outline: 0;
 }
 
-#feedbackForm form textarea:focus {
+form textarea:focus {
   outline: 0;
 }
 
-#feedbackForm form .error #userName,
-#feedbackForm form .error #userEmail,
-#feedbackForm form .error #suggestions,
-#feedbackForm form .error #additional {
+form .error #userName,
+form .error #userEmail,
+form .error #suggestions,
+form .error #additional {
   border: 1px solid #ff3860;
 }
 
-#feedbackForm .error {
+.error {
   color: #ff3860;
   font-size: 20px;
 }
 
-#feedbackForm #Section1 {
+#Section1 {
   display: flex;
   align-items: flex-start;
   gap: 150px;
   margin-bottom: 90px;
 }
 
-#feedbackForm #userEmail,
-#feedbackForm #userName {
+#userEmail,
+#userName {
   box-sizing: border-box;
   width: 370px;
   height: 50px;
