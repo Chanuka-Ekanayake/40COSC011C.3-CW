@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0b1116;
+}
+
+img {
+  position: absolute;
+  width: 1597px;
+  height: 1064px;
+  left: -56px;
+  top: -26px;
+}
+
+#backDropPreview {
+  position: absolute;
+  width: 1341px;
+  height: 900px;
+  left: 57px;
+  top: 269px;
+
+  background: #13202c;
+  opacity: 0.99;
+  border-radius: 16px;
+}
+
+h2 {
+  position: absolute;
+  width: 684px;
+  height: 77px;
+  left: calc(50% - 684px / 2 - 321px);
+  top: 149px;
+
+  font-weight: 200;
+  font-size: 64px;
+
+  color: #ffffff;
+}
+
+#namePreview {
+  position: absolute;
+  width: 386px;
+  left: 119px;
+  top: 303px;
+  display: flex;
+  gap: 40px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+label {
+  font-weight: 100;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+#emailPreview {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  width: 502px;
+  left: 812px;
+  top: 303px;
+}
+
+#improvementsPreview {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  width: 1250px;
+  left: 119px;
+  top: 453px;
+}
+
+#ratePreview {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  width: 262px;
+  height: 44px;
+  left: 119px;
+  top: 750px;
+}
+
+#updatePreview {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  width: 412px;
+  height: 44px;
+  left: 806px;
+  top: 750px;
+}
+
+#additionalPreview {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  width: 1250px;
+  height: 44px;
+  left: 119px;
+  top: 900px;
+}
+
+button.my-sbutton {
+  background: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 1px solid #76c5ff;
+  border-radius: 10px;
+  display: inline-block;
+  width: 150px;
+}
+button.my-sbutton:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #0f3b55, #297cb3);
+}
+button.my-sbutton:active {
+  transform: scale(0.95);
+}
+
+button.my-button {
+  background: linear-gradient(to right, #0f3b55, #297cb3);
+  background-color: #25465c;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+  width: 150px;
+}
+button.my-button:hover {
+  background: linear-gradient(to right, #297cb3, #0f3b55);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #586877;
+}
+button.my-button:active {
+  transform: scale(0.95);
+}
+
+#buttons {
+  position: absolute;
+  right: 50px;
+  bottom: -350px;
+}
