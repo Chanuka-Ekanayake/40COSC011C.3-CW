@@ -5,6 +5,10 @@
     --text-color: white;
 }
 
+*{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -38,8 +42,6 @@ body.blue-theme {
     user-select: none;
     width: max-content;
     transition: transform 0.3s ease;
-    overflow: hidden;
-    white-space: nowrap;
 }
 
 .image-container {
@@ -239,14 +241,4 @@ body.blue-theme #enlarged-description-box {
 .gg-font-spacing {
     width: 24px;
     height: 24px;
-}
-
-
-
-.image-container {
-    display: inline-block;
-    vertical-align: top;
-}
-.image {
-    transition: object-position 0.3s ease;
 }
