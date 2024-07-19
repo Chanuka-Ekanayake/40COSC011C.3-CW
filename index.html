@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./CSS files/Gallery.css">
+    <link rel="stylesheet" href="./CSS files/Navigation.css">
+    <link rel="stylesheet" href="./CSS files/Footer.css">
+
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+    <div class="image-container">
+        <img class="image" src="images/13.jpg" draggable="false" />
+        <div class="description-box">
+            Reykjavik, Iceland.<br>
+            This city has pioneered the use of geothermal power with almost 95% of heating in the city is provided
+            by renewable geothermal district heating<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/2.jpg" draggable="false" />
+        <div class="description-box">
+            Copenhagen, Denmark.<br>
+            Currently 50% of the population cycle or walk to work saving the city 90,000 tons of carbon dioxide (CO2) emissions annually.<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/3.jpg" draggable="false" />
+        <div class="description-box">
+            Ouarzazate, Morocco.<br>
+            Morocco is currently home to the largest concentrated solar power plant in the world.<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/4.jpg" draggable="false" />
+        <div class="description-box">
+            Curitiba, Brazil.<br>
+            With 52 square meters of green space per capita, Curitiba is truly the ‘greenest’ city in the world.<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/6.jpg" draggable="false" />
+        <div class="description-box">
+            San Francisco, USA.<br>
+            In San Francisco they have an 80% landfill diversion rate.<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/5.jpg" draggable="false" />
+        <div class="description-box">
+            Amsterdam, Netherlands.<br>
+            As well as being one of the most bike-friendly cities in the world,
+            Amsterdam is now embedding solar panels into their cycle paths that could generate enough electricity to power three houses.<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/12.jpeg" draggable="false" />
+        <div class="description-box">
+            Cochabamba, Bolivia.<br>
+            In April 2010, in response to an understanding of the impacts of climate change on the nation’s economic and community health,
+            a 3 day People’s Conference on Climate Change and the Rights of Mother Earth was held in Cochabamba.<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/8.jpg" draggable="false" />
+        <div class="description-box">
+            Tianjin, China<br>
+            China is exploring the creation of sustainable ‘eco-cities’.
+            In the wasteland of Tianjin a huge clean-up took place to restore the central reservoir and develop around it.<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/9.png" draggable="false" />
+        <div class="description-box">
+            Masadar, UAE.<br>
+            Whilst Tianjin is making headway, Masdar City, just outside of Abu Dhabi,
+            has developed the eco-city ‘greenprint’ for how cities can accommodate rapid urbanisation and dramatically reduce energy, water and waste.<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/10.jpeg" draggable="false" />
+        <div class="description-box">
+            Stockholm, Sweden.<br>
+            Stockholm has the fastest rate of urbanisation in Europe but instead of building new homes on forest and farmland
+            they are redeveloping old industrial areas with efficient low-energy housing.<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/11.jpg" draggable="false" />
+        <div class="description-box">
+            Freiburg, Germany.<br>
+            Freiburg has been pioneering ‘passive houses‘ where no active system is needed to maintain a comfortable temperature.<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/7.jpeg" draggable="false" />
+        <div class="description-box">
+            Eco-friendly park imagined by AI<br>
+            This image depicts how an AI predicts an Eco-friendly park would look like in the future<br>
+        </div>
+    </div>
+    <div class="image-container">
+        <img class="image" src="images/1.jpeg" draggable="false" />
+        <div class="description-box">
+            Eco-friendly city imagined by AI<br>
+            This image depicts how an AI predicts an Eco-friendly city would look like in the future<br>
+        </div>
+    </div>
+</div>
+
+<div id="enlarged-view" class="hidden">
+    <img id="enlarged-image" src="" alt="Enlarged Image">
+    <div id="enlarged-description-box" class="description-box"></div>
+    <button id="prev-button" class="nav-button"><i class="gg-arrow-left"></i></button>
+    <button id="next-button" class="nav-button"><i class="gg-arrow-right"></i></button>
+    <button id="close-button" class="nav-button"><i class="gg-close-r"></i></button>
+    <button id="font-button" class="nav-button"><i class="gg-font-spacing"></i></button>
+</div>
+
+<button id="theme-button"><i class="gg-dark-mode"></i></button>
+</body>
+
+<div id="navi">
+    <header>
+        <div class="navBar">
+            <div class="logo">
+                <img src="./Assets/PNG-JPG-JEPG/Navi-Logo.png" alt="logo">
+            </div>
+
+            <ul class="links">
+                <li ><a href="Home.html">HOME</a></li>
+                <li><a href="Shop">SHOP</a></li>
+                <li style="text-decoration: underline; font-weight: bolder;"><a href="index.html">GALLERY</a></li>
+                <li><a href="Feedback.html">FEEDBACK</a></li>
+            </ul>
+
+            <div class="naviIcons">
+                <!-- SVG of cart -->
+                <a href="#">
+                    <svg width="35" height="35" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_43_238)">
+                            <path
+                                d="M2.35498 2H10.0969L15.284 28.78C15.461 29.7008 15.9458 30.5279 16.6535 31.1166C17.3611 31.7053 18.2467 32.018 19.155 32H37.9679C38.8762 32.018 39.7617 31.7053 40.4694 31.1166C41.1771 30.5279 41.6619 29.7008 41.8389 28.78L44.9356 12H12.0324M19.7743 42C19.7743 43.1046 18.9078 44 17.8389 44C16.7699 44 15.9034 43.1046 15.9034 42C15.9034 40.8954 16.7699 40 17.8389 40C18.9078 40 19.7743 40.8954 19.7743 42ZM41.0647 42C41.0647 43.1046 40.1981 44 39.1292 44C38.0602 44 37.1937 43.1046 37.1937 42C37.1937 40.8954 38.0602 40 39.1292 40C40.1981 40 41.0647 40.8954 41.0647 42Z"
+                                stroke="#F3F3F3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_43_2381">
+                                <rect width="46.4516" height="48" fill="white" transform="translate(0.419434)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+
+                <!-- SVG of profile -->
+                <svg width="35" height="35" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M39.0962 42V38C39.0962 35.8783 38.2805 33.8434 36.8286 32.3431C35.3767 30.8429 33.4075 30 31.3542 30H15.8704C13.8171 30 11.8479 30.8429 10.396 32.3431C8.94408 33.8434 8.12842 35.8783 8.12842 38V42M31.3542 14C31.3542 18.4183 27.888 22 23.6123 22C19.3365 22 15.8704 18.4183 15.8704 14C15.8704 9.58172 19.3365 6 23.6123 6C27.888 6 31.3542 9.58172 31.3542 14Z"
+                        stroke="#F5F5F5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+            </div>
+
+            <ul class="dropdownMenu">
+                <li><a href="Home">HOME</a></li>
+                <li><a href="Shop">SHOP</a></li>
+                <li><a href="Gallery">GALLERY</a></li>
+                <li><a href="Feedback">FEEDBACK</a></li>
+                <li>
+                    <div class="dropDownIcons">
+                        <!-- SVG of cart -->
+                        <svg width="35" height="35" viewBox="0 0 47 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_43_238)">
+                                <path
+                                    d="M2.35498 2H10.0969L15.284 28.78C15.461 29.7008 15.9458 30.5279 16.6535 31.1166C17.3611 31.7053 18.2467 32.018 19.155 32H37.9679C38.8762 32.018 39.7617 31.7053 40.4694 31.1166C41.1771 30.5279 41.6619 29.7008 41.8389 28.78L44.9356 12H12.0324M19.7743 42C19.7743 43.1046 18.9078 44 17.8389 44C16.7699 44 15.9034 43.1046 15.9034 42C15.9034 40.8954 16.7699 40 17.8389 40C18.9078 40 19.7743 40.8954 19.7743 42ZM41.0647 42C41.0647 43.1046 40.1981 44 39.1292 44C38.0602 44 37.1937 43.1046 37.1937 42C37.1937 40.8954 38.0602 40 39.1292 40C40.1981 40 41.0647 40.8954 41.0647 42Z"
+                                    stroke="#F3F3F3" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_43_23812">
+                                    <rect width="46.4516" height="48" fill="white"
+                                        transform="translate(0.419434)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <!-- SVG of profile -->
+                        <svg width="35" height="35" viewBox="0 0 47 48" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M39.0962 42V38C39.0962 35.8783 38.2805 33.8434 36.8286 32.3431C35.3767 30.8429 33.4075 30 31.3542 30H15.8704C13.8171 30 11.8479 30.8429 10.396 32.3431C8.94408 33.8434 8.12842 35.8783 8.12842 38V42M31.3542 14C31.3542 18.4183 27.888 22 23.6123 22C19.3365 22 15.8704 18.4183 15.8704 14C15.8704 9.58172 19.3365 6 23.6123 6C27.888 6 31.3542 9.58172 31.3542 14Z"
+                                stroke="#F5F5F5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="toggle_btn">
+                <svg width="25" height="25" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="59" height="59" fill="url(#pattern0_127_390)" />
+                    <defs>
+                        <pattern id="pattern0_127_390" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_127_390" transform="scale(0.00195312)" />
+                        </pattern>
+                        <image id="image0_127_390" width="512" height="512"
+                            xlink:href="data:image/png;base64,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" />
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </header>
+</html>
