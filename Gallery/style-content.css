@@ -157,7 +157,7 @@ body {
         height: 455px;
         right: -120px;
         top: 250px;
-        background: url('images/Rectangle11.png') no-repeat center/cover;
+        background: url('../images/Rectangle11.png') no-repeat center/cover;
         z-index: -1;
     }
 }
@@ -198,7 +198,7 @@ body {
         height: 549px;
         left: 178px;
         top: 195px;
-        background: url('images/1291.png') no-repeat center/cover;
+        background: url('../images/1291.png') no-repeat center/cover;
         z-index: -1;
     }
 }
@@ -217,4 +217,19 @@ body {
         height: 1099px;
         left: -301px;
     }
+}
+
+#image-track {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: translate(0, -50%);
+    transition: transform 0.3s ease;
+}
+.image-container {
+    display: inline-block;
+    vertical-align: top;
+}
+.image {
+    transition: object-position 0.3s ease;
 }

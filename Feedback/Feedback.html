@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,74 +11,165 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="./CSS files/Feedback-Preview.css" />
-    <link rel="stylesheet" href="./CSS files/Navigation.css">
-    <link rel="stylesheet" href="./CSS files/Footer.css">
+    <link rel="stylesheet" href="../CSS files/Feedback.css" />
 
 
-    <script defer src="Feedback-Preview.js" rel="script"></script>
+    <script defer src="Feedback.js"></script>
 
+    <link rel="stylesheet" href="../CSS files/Navigation.css">
+    <link rel="stylesheet" href="../CSS files/Footer.css">
 
 </head>
 
 <body style="background: #0b1116;">
-    <div id="FeedbackP">
-        <div id="backgroundPreview">
-            <img id="bgImg" src="./Assets/PNG-JPG-JEPG/FeedbackBg.png" alt="FeedbackP">
-            <h2><b>FEEDBACK</b> - Preview</h2>
-            <span id="backDropPreview"></span>
+    <div id="feedbackForm">
+        <img id="bgImg" src="../Assets/PNG-JPG-JEPG/FeedbackBg.png" alt="feedbackImg" />
+
+        <div class="text">
+            <p style="font-weight: 800; font-size: 96px; padding-bottom: 50px">
+                FEEDBACK
+            </p>
+            <p style="font-weight: 100; font-size: 22px">
+                Give Us your honest feedback on our Website on <br />Sustainable Cities
+                and Communities
+            </p>
         </div>
 
-        <div class="textPreview">
-            <div id="namePreview">
-                <h3>Name: </h3>
-                <label id="prevName">John Smith</label>
+
+        <div class="formBackdrop">
+        </div>
+        <!-- Form -->
+        <form id="form" action="mailto:chanukasamajith@gmail.com" name="feedback" method="post" enctype="text/plain">
+            <div id="Section1">
+                <div id="name1">
+                    <label for="userName">Your Name</label><br />
+
+                    <div id="inputBox">
+                        <input type="text" id="userName" name="name" style="margin-top: 20px"
+                            placeholder="Ex: John Wick" />
+                        <div class="error"></div>
+
+                    </div>
+                </div>
+
+                <div id="email1">
+                    <label for="userEmail">Email</label><br />
+
+                    <div id="EmailBox">
+                        <input type="email" id="userEmail" name="email" style="margin-top: 20px"
+                            placeholder="example@gmail.com" /><br />
+                        <div class="error"></div>
+                    </div>
+
+                </div>
             </div>
 
-            <div id="emailPreview">
-                <h3>Email: </h3>
-                <label id="prevEmail">example@gmail.com</label>
+            <div id="Section2">
+                <label>Was this your first time visiting ?</label>
+                <div class="radio-input">
+                    <input value="Yes" name="FisrtTimeVisiting" id="value-1" type="radio" />
+                    <label for="value-1">Yes</label>
+                    <input value="No" name="FisrtTimeVisiting" id="value-2" type="radio" />
+                    <label for="value-2" class="RedMark">No</label>
+                </div>
             </div>
 
-            <div id="improvementsPreview">
-                <h3>Any Improvements: </h3>
-                <label id="prevImprovements">Lorem ipsum dolor </label>
+            <div id="Section3">
+                <label>Was the website informative and <br>easy to navigate ?</label>
+                <div class="radio-input">
+                    <input value="Yes" name="informative" id="value-3" type="radio" />
+                    <label for="value-3">Yes</label>
+                    <input value="No" name="informative" id="value-4" type="radio" />
+                    <label for="value-4" class="RedMark">No</label>
+                </div>
             </div>
 
-            <div id="ratePreview">
-                <h3>Rating: </h3>
-                <label id="prevRate">5-Star</label>
+            <div class="Section4" style="margin-bottom: 100px;">
+                <label for="suggestions">If “No” suggest any improvements for the future</label><br />
+
+                <div id="suggestionText">
+                    <textarea style="margin-top: 20px;" cols="90" rows="8" id="suggestions" name="suggestions"
+                        placeholder="Enter your message here.."></textarea><br />
+                    <div class="error"></div>
+                </div>
             </div>
 
-            <div id="updatePreview">
-                <h3>Updates: </h3>
-                <label id="prevUpdate">Yes-via Email</label>
+            <div class="Section5" style="margin-bottom: 200px;">
+                <p style="text-align: center; padding-right: 150px;">How satisfied are you with our services ? Chose
+                    from 1
+                    to 5<br />
+                    (With 1 being “Not Satisfied ar all !! and 5 extremely satisfied
+                    !!)</p><br>
+
+                <div class="rating">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text"></label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text"></label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text"></label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text"></label>
+                    <input checked type="radio" id="star1" name="rated" value="1" />
+                    <label for="star1" title="text"></label>
+                </div>
+
             </div>
 
-            <div id="additionalPreview">
-                <h3>Additional Notes: </h3>
-                <label id="prevAdditional">Lorem ipsum dolor </label>
+            <div id="Section6">
+                <label>Do you recommend our service ?</label>
+
+                <div class="radio-input">
+                    <input value="Yes" name="recommend" id="value-5" type="radio" />
+                    <label for="value-5">Yes</label>
+                    <input value="No" name="recommend" id="value-6" type="radio" />
+                    <label for="value-6" class="RedMark">No</label>
+                </div>
+            </div>
+
+            <div id="Section7">
+
+                <label for="updates" class="updateText">Would you like to receive updates about the website and any
+                    other offers ?</label>
+                <select name="updates" id="updates">
+                    <option value="Email" style="background: none;">Yes-via Email</option>
+                    <option value="Notification" style="background: none;">Yes-via notification</option>
+                    <option value="NO" style="background: none;">Not at all</option>
+                </select><br />
+            </div>
+
+            <div id="Section8" style="margin-bottom: 100px;">
+                <label>Do you have any additional questions or requests ?</label><br />
+
+                <div id="impText">
+                    <textarea cols="90" rows="8" style="margin-top: 20px;" placeholder="Enter your message here.."
+                        name="additional" id="additional"></textarea>
+                    <div class="error"></div>
+                </div>
             </div>
 
             <div id="buttons">
-                <button class="my-sbutton" id="backBtn" style="margin-right: 20px;">BACK</button>
+                <button class="my-sbutton" type="button" style="margin-right:595px ;" id="prevBtn">Preview</button>
+                <button type="reset" onclick="location.reload()" class="my-sbutton"
+                    style="margin-right: 20px;">Reset</button>
+                <button type="submit" class="my-button" id="submitBtn">Submit</button>
             </div>
-        </div>
+
+        </form>
     </div>
 
     <div id="navi">
         <header>
             <div class="navBar">
                 <div class="logo">
-                    <a href="#Home"><img src="./Assets/PNG-JPG-JEPG/Navi-Logo.png" alt="logo"></a>
+                    <a href="#Home"><img src="../Assets/PNG-JPG-JEPG/Navi-Logo.png" alt="navigationLogo"></a>
                 </div>
 
                 <ul class="links">
                     <li><a href="Home.html">HOME</a></li>
                     <li><a href="Shop">SHOP</a></li>
                     <li><a href="index.html">GALLERY</a></li>
-                    <li style="text-decoration: underline; font-weight: bolder;"><a href="Feedback.html">FEEDBACK</a>
-                    <li><a href="Sitemap.html">SITEMAP</a></li>
+                    <li><a href="Feedback.html" style="text-decoration: underline; font-weight: bolder;">FEEDBACK</a>
 
                     </li>
                 </ul>
@@ -93,7 +184,7 @@
                                     stroke="#F3F3F3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                             </g>
                             <defs>
-                                <clipPath id="clip0_43_2381">
+                                <clipPath id="clip0_43_238">
                                     <rect width="46.4516" height="48" fill="white" transform="translate(0.419434)" />
                                 </clipPath>
                             </defs>
@@ -126,7 +217,7 @@
                                         stroke-linejoin="round" />
                                 </g>
                                 <defs>
-                                    <clipPath id="clip0_43_23812">
+                                    <clipPath id="clip0_43_2381">
                                         <rect width="46.4516" height="48" fill="white"
                                             transform="translate(0.419434)" />
                                     </clipPath>
@@ -161,14 +252,14 @@
         </header>
     </div>
 
-    <div id="Footer" style="top: 1254px; ">
+    <div id="Footer" style="top: 2254px; ">
         <div id="colour"></div>
         <div id="texture"></div>
         <div class="footer-content">
             <footer>
                 <div class="row">
                     <div class="col">
-                        <img src="./Assets/PNG-JPG-JEPG/Logo.png" alt="logo" />
+                        <img src="../Assets/PNG-JPG-JEPG/Logo.png" alt="logo" />
                         <p style="padding-top: 19px">
                             Make Cities and Human Settlements<br />Inclusive, Safe, Resillient
                             and<br />Sustainable
@@ -246,7 +337,6 @@
             </footer>
         </div>
     </div>
-
 </body>
 
 </html>
