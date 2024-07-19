@@ -65,7 +65,7 @@
   color: #fff;
 }
 
-#Home-Landing a .my-button {
+#Home-Landing .buttonPlace  .my-button {
   background: linear-gradient(to right, #0f3b55, #297cb3);
   background-color: #25465c;
   color: #fff;
@@ -82,13 +82,13 @@
   border-radius: 10px;
 }
 
-#Home-Landing a .my-button:hover {
+#Home-Landing .buttonPlace  .my-button:hover {
   background: linear-gradient(to right, #297cb3, #0f3b55);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
   background-color: #586877;
 }
 
-#Home-Landing a.my-button:active {
+#Home-Landing .buttonPlace  .my-button:active {
   transform: scale(0.95);
 }
 
