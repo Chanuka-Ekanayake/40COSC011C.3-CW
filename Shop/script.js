@@ -56,9 +56,9 @@ const products = [
         name: 'Electric Scooter', 
         price: 200.00, 
         images: {
-            '40KM': 'Assets/PNG-JPG-JEPG/Shop/scooter/scooter.png',
-            '50KM': 'Assets/PNG-JPG-JEPG/Shop/scooter/scooter 2.png',
-            '60KM': 'Assets/PNG-JPG-JEPG/Shop/scooter/scooter 3.png'
+            '40KM': 'scooter/scooter.png',
+            '50KM': 'scooter/scooter 2.png',
+            '60KM': 'scooter/scooter 3.png'
         },
         description: 'Eco-friendly and efficient, electric scooters provide a sustainable transportation option, reducing carbon emissions and traffic congestion in urban areaseautiful and natural air purifiers that improve indoor air quality, enhance décor, and promote a healthier living environment',
         sizes: ['40KM', '50KM', '60KM']
@@ -69,9 +69,9 @@ const products = [
         name: 'Water Filter', 
         price: 120.00, 
         images: {
-            'UV G2': 'Assets/PNG-JPG-JEPG/Shop/waterfilter/waterfilter2.png',
-            'G2': 'Assets/PNG-JPG-JEPG/Shop/waterfilter/waterfilter1.png',
-            'ClassicL': 'Assets/PNG-JPG-JEPG/Shop/waterfilter/waterfilter3.png'
+            'UV G2': 'waterfilter/waterfilter2.png',
+            'G2': 'waterfilter/waterfilter1.png',
+            'ClassicL': 'waterfilter/waterfilter3.png'
         },
         description: 'Advanced systems that ensure clean and safe drinking water by removing impurities and contaminants.',
         sizes: ['UV G2', ' G2', 'ClassicL']
@@ -83,9 +83,9 @@ const products = [
         name: 'Solar Light', 
         price: 50.00, 
         images: {
-            '100LED': 'Assets/PNG-JPG-JEPG/Shop/solar/solar1.png',
-            '160LED': 'Assets/PNG-JPG-JEPG/Shop/solar/solar3.png',
-            '320LED': 'Assets/PNG-JPG-JEPG/Shop/solar/solar2.png'
+            '100LED': 'solar/solar1.png',
+            '160LED': 'solar/solar3.png',
+            '320LED': 'solar/solar2.png'
         },
         description: 'Long-lasting bulbs that consume less energy, helping to lower electricity bills and reduce environmental impact. Solar-powered outdoor lights harness the sun\'s energy to illuminate spaces without additional electricity costs.',
         sizes: ['100LED', '160LED', '320LED']
@@ -96,9 +96,9 @@ const products = [
         name: 'Air Purifying Plant', 
         price: 27.00, 
         images: {
-            'Ariane Fern': 'Assets/PNG-JPG-JEPG/Shop/plants/plant3.png',
-            'Emerald Queen Fern': 'Assets/PNG-JPG-JEPG/Shop/plants/plant2.png',
-            'Murano Fern': 'Assets/PNG-JPG-JEPG/Shop/plants/plant1.png'
+            'Ariane Fern': 'plants/plant3.png',
+            'Emerald Queen Fern': 'plants/plant2.png',
+            'Murano Fern': 'plants/plant1.png'
         },
         description: 'Beautiful and natural air purifiers that improve indoor air quality, enhance décor, and promote a healthier living environment.',
         sizes: ['Ariane Fern', 'Emerald Queen Fern', 'Murano Fern']
@@ -109,9 +109,9 @@ const products = [
         name: 'Booklets', 
         price: 1.00, 
         images: {
-            'Eco-friendly Living : For a Better Tomorrow': 'Assets/PNG-JPG-JEPG/Shop/booklets/content.jpg',
-            'Promoting Sustainable Living': 'Assets/PNG-JPG-JEPG/Shop/booklets/content.png',
-            'Practical Sustainability': 'Assets/PNG-JPG-JEPG/Shop/booklets/71NdD5fcv2L._AC_UY218_.jpg'
+            'Eco-friendly Living : For a Better Tomorrow': 'booklets/content.jpg',
+            'Promoting Sustainable Living': 'booklets/content.png',
+            'Practical Sustainability': 'booklets/71NdD5fcv2L._AC_UY218_.jpg'
         },
         description: 'These sustainable life booklets provide practical tips and guides for living an eco-friendly lifestyle. Made from recycled paper and printed with eco-friendly ink, they are perfect for anyone looking to reduce their environmental impact and live more sustainably.',
         sizes: ['Eco-friendly Living : For a Better Tomorrow', 'Promoting Sustainable Living', 'Practical Sustainability']
@@ -123,9 +123,9 @@ const products = [
         name: 'Notebook', 
         price: 0.50, 
         images: {
-            'white': 'Assets/PNG-JPG-JEPG/Shop/Book/book1.png',
-            'black': 'Assets/PNG-JPG-JEPG/Shop/Book/book2.png',
-            'red': 'Assets/PNG-JPG-JEPG/Shop/Book/book3.png'
+            'white': 'Book/book1.png',
+            'black': 'Book/book2.png',
+            'red': 'Book/book3.png'
         },
         description: 'This recyclable notebook is made from 100% recycled paper, featuring a durable cover also crafted from recycled materials. Perfect for eco-conscious students and professionals, it offers a sustainable solution for all your writing needs.',
         sizes: ['white', 'black', 'red']
@@ -136,8 +136,8 @@ const products = [
         name: 'Solar power Calculator ', 
         price: 5.00, 
         images: {
-            'black': 'Assets/PNG-JPG-JEPG/Shop/calculator/cal1.png',
-            'Pink': 'Assets/PNG-JPG-JEPG/Shop/calculator/cal2.png'
+            'black': 'calculator/cal1.png',
+            'Pink': 'calculator/cal2.png'
         },
         description: 'Our solar-powered calculators utilize solar energy, eliminating the need for batteries. They provide reliable, eco-friendly calculations, making them ideal for students and professionals who prioritize sustainability..',
         sizes: ['black', 'Pink']
@@ -148,8 +148,8 @@ const products = [
         name: 'Bamboo Pen Holder ', 
         price: 2.00, 
         images: {
-            'Dark-Brown': 'Assets/PNG-JPG-JEPG/Shop/pencilholder/pencilholder1.png',
-            'Light-Brown': 'Assets/PNG-JPG-JEPG/Shop/pencilholder/pencilholder2.png'
+            'Dark-Brown': 'pencilholder/pencilholder1.png',
+            'Light-Brown': 'pencilholder/pencilholder2.png'
         },
         description: 'This bamboo pencil holder is made from sustainable bamboo, offering a durable and biodegradable solution for desk organization. Its natural finish adds a touch of elegance to any workspace.',
         sizes: ['Dark-Brown', 'Light-Brown']
@@ -160,9 +160,9 @@ const products = [
         name: 'Face Mask', 
         price: 0.75, 
         images: {
-            'Black ': 'Assets/PNG-JPG-JEPG/Shop/facemask/facemask2.png',
-            'White ': 'Assets/PNG-JPG-JEPG/Shop/facemask/facemask1.png',
-            'Grey ': 'Assets/PNG-JPG-JEPG/Shop/facemask/facemask3.png'
+            'Black ': 'facemask/facemask2.png',
+            'White ': 'facemask/facemask1.png',
+            'Grey ': 'facemask/facemask3.png'
         },
         description: 'Single-use masks made from biodegradable materials, offering protection while minimizing environmental impact.',
         sizes: ['Black', 'White' , 'Grey']
@@ -173,9 +173,9 @@ const products = [
         name: 'Eco-Friendly Cleaning Products', 
         price: 8.00, 
         images: {
-            'MULTI PURPOSE CLEANER': 'Assets/PNG-JPG-JEPG/Shop/cleaning/clean3.png',
-            'Window and Glass Cleaner': 'Assets/PNG-JPG-JEPG/Shop/cleaning/clean2.png',
-            'Bath and Shower Cleaner': 'Assets/PNG-JPG-JEPG/Shop/cleaning/clean1.png'
+            'MULTI PURPOSE CLEANER': 'cleaning/clean3.png',
+            'Window and Glass Cleaner': 'cleaning/clean2.png',
+            'Bath and Shower Cleaner': 'cleaning/clean1.png'
         },
         description: 'Non-toxic and biodegradable cleaning supplies that keep your home clean while protecting the environment.',
         sizes: ['MULTI PURPOSE CLEANER', 'Window and Glass Cleaner ' , 'Bath and Shower Cleaner']
@@ -186,9 +186,9 @@ const products = [
         name: 'Coton Towel', 
         price: 10.00, 
         images: {
-            'Blue': 'Assets/PNG-JPG-JEPG/Shop/towel/towel1.png',
-            'Brown': 'Assets/PNG-JPG-JEPG/Shop/towel/towel3.png',
-            'Yellow': 'Assets/PNG-JPG-JEPG/Shop/towel/towel2.png'
+            'Blue': 'towel/towel1.png',
+            'Brown': 'towel/towel3.png',
+            'Yellow': 'towel/towel2.png'
         },
         description: 'Our bath towels are made from organic cotton, providing a soft, absorbent, and eco-friendly option. Free from synthetic dyes and chemicals, they offer a sustainable choice for your bathroom.',
         sizes: ['Blue', 'Brown' , 'Yellow']
@@ -199,8 +199,8 @@ const products = [
         name: 'Sun Cream', 
         price: 9.00, 
         images: {
-            'SPF50': 'Assets/PNG-JPG-JEPG/Shop/suncream/suncream1.png',
-            'SPF90': 'Assets/PNG-JPG-JEPG/Shop/suncream/suncream2.png',
+            'SPF50': 'suncream/suncream1.png',
+            'SPF90': 'suncream/suncream2.png',
             
         },
         description: 'Our natural sun cream is formulated with mineral-based ingredients, providing broad-spectrum protection against UVA and UVB rays. Free from harmful chemicals, it’s packaged in eco-friendly containers..',
@@ -212,9 +212,9 @@ const products = [
         name: 'Jackets', 
         price: 11.00, 
         images: {
-            'Black': 'Assets/PNG-JPG-JEPG/Shop/Jackets/jak1.png',
-            'White': 'Assets/PNG-JPG-JEPG/Shop/Jackets/jack2.png',
-            'Red': 'Assets/PNG-JPG-JEPG/Shop/Jackets/jack3.png',
+            'Black': 'Jackets/jak1.png',
+            'White': 'Jackets/jack2.png',
+            'Red': 'Jackets/jack3.png',
             
         },
         description: 'These eco-friendly jackets are made from recycled materials, offering warmth and style without compromising sustainability. Perfect for those who want to stay warm and fashionable while protecting the environment.',
@@ -226,9 +226,9 @@ const products = [
         name: 'Shoes', 
         price: 20.00, 
         images: {
-            'Blue': 'Assets/PNG-JPG-JEPG/Shop/shoes/shoes1.png',
-            'Black': 'Assets/PNG-JPG-JEPG/Shop/shoes/shoes3.png',
-            'Red': 'Assets/PNG-JPG-JEPG/Shop/shoes/shoes2.png',
+            'Blue': 'shoes/shoes1.png',
+            'Black': 'shoes/shoes3.png',
+            'Red': 'shoes/shoes2.png',
             
         },
         description: 'Our eco-friendly shoes are made from recycled and sustainable materials, offering comfort and style while reducing environmental impact. Perfect for eco-conscious consumers.',
@@ -240,9 +240,9 @@ const products = [
         name: 'UV Glass', 
         price: 12.00, 
         images: {
-            'Green': 'Assets/PNG-JPG-JEPG/Shop/sunglass/sunglass1.png',
-            'Black': 'Assets/PNG-JPG-JEPG/Shop/sunglass/sunglass2.png',
-            'Red': 'Assets/PNG-JPG-JEPG/Shop/sunglass/sunglass3.png',
+            'Green': 'sunglass/sunglass1.png',
+            'Black': 'sunglass/sunglass2.png',
+            'Red': 'sunglass/sunglass3.png',
             
         },
         description: 'Protect your eyes with our UV glasses, made from sustainable materials. They offer stylish protection against harmful UV rays while promoting environmental sustainability.',
@@ -254,9 +254,9 @@ const products = [
         name: 'Cap', 
         price: 5.00, 
         images: {
-            'Black': 'Assets/PNG-JPG-JEPG/Shop/caps/cap1.png',
-            'White': 'Assets/PNG-JPG-JEPG/Shop/caps/cap2.png',
-            'Red': 'Assets/PNG-JPG-JEPG/Shop/caps/cap3.png',
+            'Black': 'caps/cap1.png',
+            'White': 'caps/cap2.png',
+            'Red': 'caps/cap3.png',
             
         },
         description: 'Our eco-friendly caps are made from organic cotton and recycled materials, offering a stylish and sustainable accessory. Perfect for sun protection and adding a fashionable touch to your outfit while promoting environmental consciousness.',
@@ -268,7 +268,7 @@ const products = [
         name: 'Re-usable Water Bottle', 
         price: 2.00, 
         images: {
-          'default': 'Assets/PNG-JPG-JEPG/Shop/rec2/WaterBottle.png'
+          'default': 'rec2/WaterBottle.png'
         },
         description: 'Eco-friendly reusable water bottle',
         sizes: ['default']
@@ -520,7 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const continueShoppingBtn = document.getElementById('continue-shopping');
         if (continueShoppingBtn) {
             continueShoppingBtn.addEventListener('click', () => {
-                window.location.href = 'shop.html';
+                window.location.href = 'index.html';
             });
         }
     } else if (window.location.pathname.includes('product.html')) {
@@ -582,7 +582,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 2000);
             });
         }
-    } else if (window.location.pathname.includes('shop.html') || window.location.pathname.endsWith('/')) {
+    } else if (window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')) {
         // Index page
         const productLinks = document.querySelectorAll('.product-link');
         productLinks.forEach(link => {
@@ -693,7 +693,7 @@ function displayCheckoutSummary() {
       cart = [];
       localStorage.removeItem('cart');
       updateCartCount();
-      window.location.href = 'shop.html';
+      window.location.href = 'index.html';
     });
   }
   
