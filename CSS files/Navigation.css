@@ -26,13 +26,13 @@
 #navi a:hover {
   text-decoration: underline;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 19px;
 }
 
 /* Header */
 #navi header {
   width: 100%;
-  height: 70px;
+  height: 55px;
   left: 0;
   top: 0;
   position: fixed;

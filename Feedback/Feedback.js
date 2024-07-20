@@ -154,7 +154,7 @@ document.getElementById('submitBtn').addEventListener("click", function (event) 
   validation();
   if (validName && validEmail) {
     document.feedback.submit();
-    setTimeout(function(){window.location.href = "Feedback-Thankyou.html";}, 2000);
+    setTimeout(function () { window.location.href = "Feedback-Thankyou.html"; }, 2000);
 
   }
 });
@@ -194,15 +194,15 @@ const toggleBtnIcon = document.querySelector(".toggle_btn");
 const dropDownMenu = document.querySelector(".dropdownMenu");
 
 toggleBtn.onclick = function () {
-    dropDownMenu.classList.toggle('open');
-    const isOpen = dropDownMenu.classList.contains('open');
+  dropDownMenu.classList.toggle('open');
+  const isOpen = dropDownMenu.classList.contains('open');
 };
 
 
 // Navigation bar animation
 window.addEventListener("scroll", function () {
-    var header = document.querySelector("header");
-    header.classList.toggle("stickey", window.scrollY > 0);
+  var header = document.querySelector("header");
+  header.classList.toggle("stickey", window.scrollY > 0);
 })
 
 

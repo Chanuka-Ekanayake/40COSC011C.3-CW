@@ -13,3 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault();
     window.history.back();
   });
+
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector("header");
+    header.classList.toggle("stickey", window.scrollY > 0);
+})

@@ -4,420 +4,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
     <link rel="stylesheet" href="../CSS files/Navigation.css">
     <link rel="stylesheet" href="../CSS files/Footer.css">
 
+    <style>
+        body {
+            background: #0b1116;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            color: #fff;
+            font-weight: lighter;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: #fff;
+            font-weight: bold
+        }
+
+        #StDetails p {
+            font-size: 30px;
+        }
+
+        #StDetails {
+            position: absolute;
+            width: 484px;
+            height: 132px;
+            left: 57px;
+            top: 60px;
+        }
+
+
+
+        .Shadow {
+            position: absolute;
+            width: 1217px;
+            height: 246px;
+            top: 0px;
+            left: 50px;
+            background: #D9D9D9;
+            opacity: 0.2;
+
+        }
+
+        .backdrop {
+
+            box-sizing: border-box;
+            position: absolute;
+            width: 1217px;
+            height: 246px;
+            left: 50px;
+            top: 0px;
+
+            background: #13202C;
+            border: 1px solid #FFFFFF;
+        }
+
+        .heading {
+
+            position: absolute;
+            width: 1214px;
+            height: 49px;
+            left: 50px;
+            top: 0px;
+
+            background: linear-gradient(90deg, #091B25 0%, #22658B 100%);
+
+        }
+
+        .content1 {
+            position: absolute;
+            left: 80px;
+            top: -10px;
+
+        }
+
+        .content1 p {
+            padding-left: 50px;
+
+        }
+
+        .Number {
+            position: absolute;
+            left: 0px;
+            top: 60px;
+        }
+
+
+        .Number h1 {
+            position: absolute;
+            left: 35px;
+            top: 20px;
+        }
+
+        #Sec1 {
+
+            position: absolute;
+            width: 1323px;
+            height: 268px;
+            left: 74px;
+            top: 24px;
+        }
+
+        #Sec2 {
+
+            position: absolute;
+            width: 1283px;
+            height: 268px;
+            left: 121px;
+            top: 806px;
+
+        }
+
+
+        #Sec3 {
+
+            position: absolute;
+            width: 1323px;
+            height: 268px;
+            left: 74px;
+            top: 1267px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #StDetails {
+            display: flex;
+            width: 1240px;
+            justify-content: space-between;
+        }
+    </style>
 
 </head>
 
 <body>
 
-    <div class="horizontal-bar">
-        <img src="scooter/scooter.png" alt="Item Image" class="item-image">
-        <div class="item-description">
-            <div id="headingdes1">ELECTRIC</div>
-            <div id="headingdes2">SCOOTER</div>
-            <div id="headingdes3">Best rated and high demand product.<br>
-                All offers will be validated until August 24th </div>
-            <button class="my-button1">BUY NOW </button>
-            <div class="rating" style="transform:  translateY(130px) scale(2); padding-left: 250px;">
-                <span class="star" data-value="1">★</span>
-                <span class="star" data-value="2">★</span>
-                <span class="star" data-value="3">★</span>
-                <span class="star" data-value="4">★</span>
-                <span class="star" data-value="5">★</span>
-            </div>
-
-        </div>
+    <div id="StDetails">
+        <p><b>Name: </b> Milan Ranaweera </p>
+        <p> <b> Role : </b> <span>Student 1</span></p>
+        <p> <b> Uow No. : </b> <span>w2082263</span></p>
     </div>
 
-    <main>
-        <!-- Categories items -->
-        <div>
-            <h2 id="categoriesname">CATEGORIES</h2>
-            <div class="product-row">
-                <div class="product1">
-                    <a href="#cathousehold">
-                        <img src="categories/House.png" alt="House" class="catimage">
-                    </a>
-                    <p class="catdescription">HOUSEHOLD</p>
-                </div>
-                <div class="product1">
-                    <a href="#cateducation">
-                        <img src="categories/Book.png" alt="Book" class="catimage">
-                    </a>
-                    <p class="catdescription">EDUCATION</p>
 
-                </div>
-                <div class="product1">
-                    <a href="#cathealth">
-                        <img src="categories/Health.png" alt="Health" class="catimage">
-                    </a>
-                    <p class="catdescription">HEALTH</p>
+    <div id="Sec1" style="top: 250px; left: 74px;">
+        <span class="Shadow"></span>
+        <span class="backdrop"></span>
+        <span class="heading"></span>
 
-                </div>
-                <div class="product1">
-                    <a href="#catfashion">
-                        <img src="categories/Fashion.png" alt="Fashion" class="catimage">
-                    </a>
-                    <p class="catdescription">FASHION</p>
-                </div>
-            </div>
+        <div class="content1">
+            <a href="../Home/Splashscreen.html">
+                <h1> Splash Screen</h1>
+            </a>
+            <p>Our splash screen will display our mission statement and introduce our team members.<br>
+                It will be visible for a brief duration of 4 seconds. <br><br>
+                Languages used: HTML, CSS, JavaScript
+            </p>
         </div>
 
-        <div>
-            <h2 class="productcatgorname" id="cathousehold">Household</h2>
-            <div class="product-row">
-                <div class="product" data-id="1">
-                    <div class="product2">
-                        <img src="scooter/scooter.png" alt="Product 1" class="product-link" id="img1">
-                    </div>
-                    <p class="product-link">Electric Scooter</p>
+        <div class="Number">
+            <svg width="117" height="117" viewBox="0 0 117 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="58.5" cy="58.5" r="58.5" fill="#204668" />
+            </svg>
 
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$200.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product" data-id="2">
-                    <div class="product2">
-                        <img src="waterfilter/waterfilter1.png" alt="Product 2" class="product-link" id="img2">
-                    </div>
-                    <p class="product-link">Water Filter</p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$120.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product" data-id="3">
-                    <div class="product2">
-                        <img src="solar/solar3.png" alt="Product 3" class="product-link" id="img3">
-                    </div>
-                    <p class="product-link">Solar Light</p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount"> $50.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product" data-id="4">
-                    <div class="product2">
-                        <img src="plants/plant3.png" alt="Product 4" class="product-link" id="img4">
-                    </div>
-                    <p class="product-link">Air Purifying Plant</p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$27.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-
-            <!-- Education products -->
-            <h2 class="productcatgorname" id="cateducation">Education</h2>
-            <div class="product-row">
-                <div class="product" data-id="5">
-                    <div class="product2">
-                        <img src="booklets/content.jpg" alt="Product 5" class="product-link" id="img5">
-                    </div>
-                    <p class="product-link">Booklets</p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount"> $1.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="product" data-id="6">
-                    <div class="product2">
-                        <img src="Book/book1.png" alt="Product 6" class="product-link" id="img6">
-                    </div>
-                    <p class="product-link">Notebook</p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$0.50</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="product" data-id="7">
-                    <div class="product2">
-                        <img src="calculator/cal1.png" alt="Product 7" class="product-link" id="img7">
-                    </div>
-                    <p class="product-link">Scientific Calculator </p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$5.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="product" data-id="8">
-                    <div class="product2">
-                        <img src="pencilholder/pencilholder1.png" alt="Product 8" class="product-link" id="img8">
-                    </div>
-                    <p class="product-link">Pen Holder </p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$2.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-            </div>
-
-            <!-- Health products -->
-
-            <h2 class="productcatgorname" id="cathealth">Health</h2>
-            <div class="product-row">
-                <div class="product" data-id="9">
-                    <div class="product2">
-                        <img src="facemask/facemask2.png" alt="Product 9" class="product-link" id="img9">
-                    </div>
-                    <p class="product-link">Face Mask</p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$0.75</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="product" data-id="10">
-                    <div class="product2">
-                        <img src="cleaning/clean2.png" alt="Product 10" class="product-link" id="img10">
-                    </div>
-                    <p class="product-link">Cleaning Liquid</p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount"> $8.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="product" data-id="11">
-                    <div class="product2">
-                        <img src="towel/towel1.png" alt="Product 11" class="product-link" id="img11">
-                    </div>
-                    <p class="product-link">Cotton Towel</p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$50.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="product" data-id="12">
-                    <div class="product2">
-                        <img src="suncream/suncream1.png" alt="Product 12" class="product-link" id="img12">
-                    </div>
-                    <p class="product-link">Sun Cream</p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$9.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-
-            <div class="horizontal-bar2">
-                <img src="rec2/WaterBottle.png" alt="Item Image2" class="item-image2">
-                <div class="item-description2">
-                    <div class="bar2name1">Re-usable Water Bottles</div>
-                    <div class="bar2name2">EXTRA</div>
-                    <div class="bar2name2">75 % OFF</div>
-                    <div class="bar2name3">Use Promo Code: #12F89</div>
-                    <button class="my-button1" id="buy-now-water-bottle">BUY NOW</button>
-                </div>
-            </div>
-
-            <h2 class="productcatgorname" id="catfashion">Fashion</h2>
-            <div class="product-row">
-                <!-- Fashion products -->
-                <div class="product" data-id="13">
-                    <div class="product2">
-                        <img src="Jackets/jak1.png" alt="Product 13" class="product-link" id="img13">
-                    </div>
-                    <p class="product-link">Jackets </p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$11.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="product" data-id="14">
-                    <div class="product2">
-                        <img src="shoes/shoes1.png" alt="Product 14" class="product-link" id="img14">
-                    </div>
-                    <p class="product-link">Shoes</p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$20.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="product" data-id="15">
-                    <div class="product2">
-                        <img src="sunglass/sunglass1.png" alt="Product 15" class="product-link" id="img15">
-                    </div>
-                    <p class="product-link">UV Glass</p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount">$12.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <div class="product" data-id="16">
-                    <div class="product2">
-                        <img src="caps/cap2.png" alt="Product 16" class="product-link" id="img16">
-                    </div>
-                    <p class="product-link"> Cap </p>
-
-                    <div class="rating">
-                        <span class="star" data-value="1">★</span>
-                        <span class="star" data-value="2">★</span>
-                        <span class="star" data-value="3">★</span>
-                        <span class="star" data-value="4">★</span>
-                        <span class="star" data-value="5">★</span>
-                    </div>
-
-                    <p class="productamount"> $5.00</p>
-
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
+            <h1>01</h1>
         </div>
-    </main>
 
-    <!-- Navigation and Footer -->
+    </div>
+
+    <div id="Sec2" style="top: 650px; left: 74px;">
+        <span class="Shadow"></span>
+        <span class="backdrop"></span>
+        <span class="heading"></span>
+
+        <div class="content1">
+            <a href="../Shop/index.html">
+                <h1> Shop</h1>
+            </a>
+            <p> In the 'Sustainable Cities and Communities' section of my shop, I focus on addressing the needs of
+                cities at various levels of society. <br>
+                I've curated a selection of eco-friendly products to help achieve sustainable living. <br>
+                This shop caters to the overall requirements of sustainable urban development. <br><br>
+                Languages used: HTML, CSS, JavaScript
+            </p>
+        </div>
+
+        <div class="Number">
+            <svg width="117" height="117" viewBox="0 0 117 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="58.5" cy="58.5" r="58.5" fill="#204668" />
+            </svg>
+
+            <h1>02</h1>
+        </div>
+
+    </div>
+
+    <div id="Sec3" style="top: 1150px; left: 74px;">
+        <span class="Shadow"></span>
+        <span class="backdrop"></span>
+        <span class="heading"></span>
+
+        <div class="content1">
+            <a a href="../Content/ContentPage2.html">
+                <h1> Content page</h1>
+            </a>
+            <p>My content page highlights Urban Green Spaces, which can be considered 'The Lungs of Sustainable Cities'.
+                <br><br>
+                We explore the numerous benefits of these spaces, including improved air quality, climate regulation,
+                biodiversity support, mental health benefits,<br> physical health promotion, and much more. <br><br>
+                Languages used: HTML, CSS
+            </p>
+        </div>
+
+        <div class="Number">
+            <svg width="117" height="117" viewBox="0 0 117 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="58.5" cy="58.5" r="58.5" fill="#204668" />
+            </svg>
+
+            <h1>03</h1>
+        </div>
+    </div>
 
     <div id="navi">
         <header>
             <div class="navBar">
                 <div class="logo">
-                    <a href="../Home/Home.html"> <img src="../Assets/PNG-JPG-JEPG/Navi-Logo.png" alt="logo"> </a>
+                    <a href="../Home/Home.html"><img src="../Assets/PNG-JPG-JEPG/Navi-Logo.png" alt="logo"></a>
                 </div>
 
                 <ul class="links">
                     <li><a href="../Home/Home.html">HOME</a></li>
-                    <li style="text-decoration: underline; font-weight: bolder;"><a href="index.html">SHOP</a></li>
+                    <li><a href="../Shop/index.html">SHOP</a></li>
                     <li><a href="../Gallery/index.html">GALLERY</a></li>
                     <li><a href="../Feedback/Feedback.html">FEEDBACK</a></li>
                 </ul>
 
                 <div class="naviIcons">
                     <!-- SVG of cart -->
-                    <a href="cart.html" id="go-to-cart">
+                    <a href="../Shop/cart.html">
                         <svg width="35" height="35" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_43_238)">
                                 <path
@@ -430,8 +265,6 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        <span id="cart-count" style="padding: 3px;">0</span>
-
                     </a>
 
                     <!-- SVG of profile -->
@@ -445,7 +278,7 @@
 
                 <ul class="dropdownMenu">
                     <li><a href="../Home/Home.html">HOME</a></li>
-                    <li style="text-decoration: underline; font-weight: bolder;"><a href="index.html">SHOP</a></li>
+                    <li><a href="../Shop/index.html">SHOP</a></li>
                     <li><a href="../Gallery/index.html">GALLERY</a></li>
                     <li><a href="../Feedback/Feedback.html">FEEDBACK</a></li>
                     <li>
@@ -496,14 +329,14 @@
     </div>
 
 
-    <div id="Footer" style="top:5500px">
+    <div id="Footer" style="top: 1500px;">
         <div id="colour"></div>
         <div id="texture"></div>
         <div class="footer-content">
             <footer>
                 <div class="row">
                     <div class="col">
-                        <a href="../Home/Home.html"> <img src="../Assets/PNG-JPG-JEPG/Logo.png" alt="logo" /></a>
+                        <a href="Home.html"> <img src="../Assets/PNG-JPG-JEPG/Logo.png" alt="logo" /></a>
                         <p style="padding-top: 19px">
                             Make Cities and Human Settlements<br />Inclusive, Safe, Resillient
                             and<br />Sustainable
@@ -552,9 +385,9 @@
                         </h2>
                         <ul>
                             <li><a href="../Home/Home.html"> HOME </a></li>
-                            <li><a href="index.html"> SHOP </a></li>
+                            <li><a href="../Shop/index.html"> SHOP </a></li>
                             <li><a href="../Gallery/index.html"> GALLERY </a></li>
-                            <li><a href="cart.html"> CART </a></li>
+                            <li><a href="../Shop/cart.html"> CART </a></li>
                         </ul>
                     </div>
 
@@ -575,19 +408,22 @@
                             <li><a href="../Feedback/Feedback.html"> FEEDBACK </a></li>
                             <li><a href="../Sitemap/Sitemap.html"> SITEMAP </a></li>
                             <li><a href="#"> TEAM </a></li>
-                            <li><a href="../PageEditors/Milan.html"> EDITOR </a></li>
+                            <li><a href="#"> EDITOR </a></li>
                         </ul>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
+    </div>
 
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("stickey", window.scrollY > 0);
+        })
+    </script>
 
-
-
-
-    <script src="script.js"></script>
 </body>
 
 </html>
