@@ -1,3 +1,7 @@
+// Set a flag in localStorage to indicate the splash screen has been shown
+localStorage.setItem('splash-screen', 'true');
+        
+
 
 document.addEventListener('DOMContentLoaded', () => {               
     let percentage = 0;
@@ -16,11 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 splashScreen.style.transition = 'opacity 1s ease';
                 splashScreen.style.opacity = 0;
+
                 setTimeout(() => {
                     splashScreen.style.display = 'none';
                     mainContent.style.display = 'block';
+                    window.location.href = 'Home.html';
                 }, 1000);
+
+
             },1000);
         }
     },10);
 });
+

@@ -12,3 +12,12 @@ window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
     header.classList.toggle("stickey", window.scrollY > 0);
 })
+
+// Check if the splash screen has been shown
+if (!localStorage.getItem('splash-screen')) {
+    // If not, redirect to the splash screen
+    window.location.href = 'splashscreen.html';
+} else {
+    // If it has been shown, remove the flag (optional, depending on your needs)
+    localStorage.removeItem('splash-screen');
+}
