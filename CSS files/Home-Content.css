@@ -73,8 +73,7 @@
   opacity: 0.5;
 }
 
-#Home-Content a {
-  /* SEE MORE */
+#Home-Content #seeMore {
 
   position: absolute;
   width: 114px;
