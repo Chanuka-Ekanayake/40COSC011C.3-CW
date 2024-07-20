@@ -24,8 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     splashScreen.style.display = 'none';
                     mainContent.style.display = 'block';
-                    window.location.href = 'Home.html';
+                    
                 }, 1000);
+                window.location.href = 'Home.html';
 
 
             },1000);
