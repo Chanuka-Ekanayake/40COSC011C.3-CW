@@ -5,7 +5,6 @@ const dropDownMenu = document.querySelector(".dropdownMenu");
 
 toggleBtn.onclick = function () {
     dropDownMenu.classList.toggle('open');
-    const isOpen = dropDownMenu.classList.contains('open');
 };
 
 window.addEventListener("scroll", function () {

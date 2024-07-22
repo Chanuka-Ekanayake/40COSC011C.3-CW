@@ -51,7 +51,6 @@ function setError(element, message) {
 }
 
 
-
 function setSuccess(element) {
   var inputControl = element.parentElement;
   var errorDisplay = inputControl.querySelector(".error");
@@ -154,7 +153,7 @@ document.getElementById('submitBtn').addEventListener("click", function (event) 
   validation();
   if (validName && validEmail) {
     document.feedback.submit();
-    setTimeout(function () { window.location.href = "Feedback-Thankyou.html"; }, 2000);
+    setTimeout(function () { window.location.href = "Feedback-Thankyou.html"; }, 1500);
 
   }
 });
@@ -163,10 +162,6 @@ document.getElementById('prevBtn').addEventListener("click", function (event) {
   event.preventDefault();
 
   validation();
-  console.log(emptyForm);
-  console.log(validName);
-  console.log(validEmail);
-
 
   if (validName && validEmail) {
 
@@ -174,7 +169,7 @@ document.getElementById('prevBtn').addEventListener("click", function (event) {
       name: userName.value,
       email: email.value,
       suggestion: suggestion.value,
-      rate: document.querySelector('input[name="rate"]:checked').value,
+      rate: document.querySelector('.rating input:checked').value,
       update: update.value,
       additional: additional.value,
       visit: visit.value,
@@ -204,9 +199,4 @@ window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
   header.classList.toggle("stickey", window.scrollY > 0);
 })
-
-
-
-
-
 
