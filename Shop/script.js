@@ -335,30 +335,55 @@ function renderCart() {
     const cartItemsContainer = document.getElementById('cart-items');
     if (!cartItemsContainer) return;
 
-    cartItemsContainer.innerHTML = '';
+    cartItemsContainer.innerHTML = ''; // Clear previous content
+
     const table = document.createElement('table');
 
     cart.forEach((item, index) => {
+        const product = products.find(p => p.id === item.id);
+        const sizeIndex = product.sizes.indexOf(item.size);
+        let itemPrice = product.price;
+        
+        if (sizeIndex !== -1) {
+            const multipliers = [1, 1.2, 1.5];
+            itemPrice *= multipliers[sizeIndex] || 1;
+        }
+
         const row = document.createElement('tr');
+
         row.innerHTML = `
             <td><img src="${item.image}" alt="${item.name}"></td>
             <td>${item.name}</td>
             <td>${item.size}</td>
-            <td>$${item.price.toFixed(2)}</td>
+            <td>$${itemPrice.toFixed(2)}</td>
             <td>
                 <button class="decrease-qty" onclick="changeQuantity(${index}, -1)">-</button>
                 <span class="item-quantity">${item.quantity}</span>
                 <button class="increase-qty" onclick="changeQuantity(${index}, 1)">+</button>
             </td>
-            <td>$${(item.price * item.quantity).toFixed(2)}</td>
+            <td>$${(itemPrice * item.quantity).toFixed(2)}</td>
             <td><button class="remove-item" onclick="removeItemFromCart(${index})">Remove</button></td>
         `;
+
         table.appendChild(row);
     });
 
     cartItemsContainer.appendChild(table);
 
-    const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    // Update total
+    const total = cart.reduce((acc, item) => {
+        const product = products.find(p => p.id === item.id);
+        const sizeIndex = product.sizes.indexOf(item.size);
+        let itemPrice = product.price;
+        
+        if (sizeIndex !== -1) {
+            const multipliers = [1, 1.2, 1.5];
+            itemPrice *= multipliers[sizeIndex] || 1;
+        }
+        
+        return acc + itemPrice * item.quantity;
+    }, 0);
+    
     document.getElementById('cart-total').textContent = total.toFixed(2);
 }
 
@@ -420,6 +445,7 @@ function updateProductDetails(product) {
             thumbnailsContainer.appendChild(thumbnail);
             sizeButtonsContainer.appendChild(button);
         });
+        
     }
 
     const qtyInput = document.getElementById('qty');
