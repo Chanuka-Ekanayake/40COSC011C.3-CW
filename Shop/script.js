@@ -456,7 +456,6 @@ function updateProductDetails(product) {
     updateTotal();
 }
 
-console.log(cart);
 
 // Utility functions
 function getCurrentProduct() {
