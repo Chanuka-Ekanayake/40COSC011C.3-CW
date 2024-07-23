@@ -387,6 +387,7 @@ function renderCart() {
     document.getElementById('cart-total').textContent = total.toFixed(2);
 }
 
+
 function updateProductDetails(product) {
     document.getElementById('product-name').textContent = product.name;
     document.getElementById('product-description').textContent = product.description || '';
