@@ -430,6 +430,7 @@ function updateProductDetails(product) {
     updateTotal();
 }
 
+
 // Utility functions
 function getCurrentProduct() {
     const urlParams = new URLSearchParams(window.location.search);
